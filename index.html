@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content ="Jeampaul Salazar"/>
+    <meta name="Description" content="buenas practicas css">
+    <meta name="keyboards" content="css, html, formulario">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Buenas practicas HTML</title>
+    </head>
+    
+    <body>
+      <div class="wrapper">
+        <h1>FORMULARIO</h1>
+        <div class="formulario">
+          <div class="formulario-informacion">
+            <form action="#" method="get">
+              <div class="formulario-informacion-texto clearfix">
+                <h2>CUENTA</h2>
+      
+                <div class="texto-cuadros">
+                  <div><img class="icono" src="./img/img-1.png" alt=usuario></div>
+                  <label for="usuario"></label>
+                  <input type="text" value="Nombre completo" name="nombre" id="usuario" class="cuenta"/>
+                </div>
+      
+                <div class="texto-cuadros"> 
+                  <div><img class="icono" src="./img/img-2.png" alt="correo"></div>
+                  <label for="e-mail"></label>
+                  <input type="text" value="Correo electronico" name="correo" id="correo" class="cuenta">
+                </div>
+                
+                <div class="texto-cuadros">
+                  <span><img class="icono" src="./img/img-3.png" alt="contraseña"></span>
+                  <label for="password"></label>
+                  <input type="text" value="Contraseña" name="contraseña" id="contraseña" class="cuenta">
+                </div>
+              </div>
+      
+              <div class="fecha clearfix">
+                <h2>Fecha de nacimiento</h2>
+                <label for="fecha"></label>
+                <input type="date" value="" name="fecha" id="fecha" class="cuenta"/>
+              </div>
+      
+              <div class="genero clearfix">
+                <h2>Genero</h2>
+                <div class="genero-boton">
+                  <input type="radio" value="masculino" id="masculino" name="genero">
+                  <label for="masculino">Masculino</label>
+                </div>
+                
+                <div class="genero-boton">
+                  <input type="radio" value="femenino" id="femenino" name="genero">
+                  <label for="femenino">Femenino</label>
+                </div>
+              </div>
+              <!--PYMENT-->
+              <div class="pago clearfix">
+                <h2>Pago</h2>
+                <button class="forma-de-pago">
+                  <img class="visa" src="img/visa.png" alt="visa">Tarjeta
+                </button>
+                <button class="forma-de-pago">
+                  <img class="paypal" src="img/paypal.png" alt="paypal">Paypal
+                </button>
+              </div>
+              
+              <div class="cuadro clearfix">
+                <div class="texto-cuadros">
+                  <div><img class="icono" src="./img/img-4.png" alt="tarjeta"></div>
+                  <label for="tarjeta"></label>
+                  <input type="text" value="Numero de tarjeta" name="tarjeta" id="tarjeta" class="cuenta"/>
+                </div>
+      
+                <div class="texto-cuadros">
+                  <div><img class="icono" src="./img/img-5.png" alt="candado"></div>
+                  <label for="candado"></label>
+                  <input type="text" value="tarjeta" name="tarjeta" id="tarjeta" class="cuenta"/>
+                </div>
+                
+                <div class="fecha-tarjeta">
+                  <label for="dfecha-tarjeta"></label>
+                  <input type="date" value="" name="fecha-tarjeta" id="fecha-tarjeta" class="cuenta"/>
+                </div>
+              </div>    
+      
+              <div class="texto clearfix">
+                <h5>TERMINOS Y CONDICIONES</h5>
+      
+                <input type="checkbox" value="terminos" id="terminos" name="terminos">
+                <label for="terminos">Si, yo acepto los terminos y condiciones de creacion de cuenta de este servicio y he leido las politicas de privacidad respecto a  mi informacion personal.</label>
+              </div>
+              <button class = "enviar" type="submit" value="submit">Crear cuenta</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
